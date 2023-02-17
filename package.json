@@ -4,9 +4,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "webpack": "node_modules/.bin/webpack"
+    "webpack": "node_modules/.bin/webpack",
+    "babel": "node_modules/.bin/babel src -d functions/src && node_modules/.bin/babel index.js -d functions"
   },
   "dependencies": {
+    "firebase": "^9.17.1",
     "isomorphic-fetch": "^2.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
